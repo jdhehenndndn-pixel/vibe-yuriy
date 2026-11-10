@@ -47,8 +47,12 @@ h1 em{font-style:normal;color:var(--ac)}
 .tnum{font:700 12px var(--mono);color:var(--ac);letter-spacing:.1em;margin-bottom:10px}
 .tname{font-size:clamp(28px,4vw,40px);font-weight:700;line-height:1.1;margin-bottom:12px}
 .tname .badge{display:inline-block;vertical-align:middle;margin-left:10px;font:700 11px var(--mono);letter-spacing:.08em;background:var(--ac);color:var(--onac);padding:5px 10px;border-radius:999px}
-.tdesc{font-size:16.5px;color:var(--tx2)}
-.tdesc p+p{margin-top:10px}
+.tdesc{background:linear-gradient(135deg,rgba(92,242,166,.11),rgba(92,242,166,.02));border:1px solid rgba(92,242,166,.35);border-radius:18px;padding:20px 22px;color:var(--tx);font-size:16.5px}
+.tdesc .dl{font:700 11.5px var(--mono);letter-spacing:.1em;color:var(--ac);margin-bottom:10px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.tdesc .plus{background:var(--ac);color:var(--onac);border-radius:6px;padding:2px 8px;letter-spacing:.04em}
+.tdesc .key{font-size:clamp(17px,2vw,20px);line-height:1.42;font-weight:600}
+.tdesc mark{background:linear-gradient(transparent 60%,rgba(92,242,166,.38) 0);color:inherit;padding:0 2px;border-radius:2px}
+.tdesc p+p{margin-top:12px;color:var(--tx2)}
 .price{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:20px 22px}
 .price.rec{border-color:var(--ac);background:var(--panel2)}
 .price .p{font-size:34px;font-weight:700;white-space:nowrap}
@@ -364,8 +368,8 @@ svg text{font-family:var(--body)}
     <div>
       <div class="tnum">ТАРИФ 01</div>
       <div class="tname">База</div>
-      <div class="tdesc">
-        <p>Вы научитесь делать инструменты на основе выгрузок из 1С и Excel. Загружаете выгрузку и сразу видите, кто не оплатил, у кого просрочка и какие поступления ждать на этой неделе.</p>
+      <div class="tdesc"><div class="dl">ЧТО ВЫ ПОЛУЧИТЕ</div>
+        <p class="key">Вы научитесь делать инструменты <mark>на основе выгрузок из 1С и Excel</mark>. Загружаете выгрузку и сразу видите, кто не оплатил, у кого просрочка и какие поступления ждать на этой неделе.</p>
         <p>Рядом дашборд для генерального по заказам и деньгам. А раз вы уже делаете сайты, можно собрать калькулятор, где клиент сам считает заказ крепежа и оставляет заявку.</p>
       </div>
     </div>
@@ -468,9 +472,9 @@ svg text{font-family:var(--body)}
     <div>
       <div class="tnum">ТАРИФ 02</div>
       <div class="tname">Практика</div>
-      <div class="tdesc">
-        <p>Всё из Базы, только без ручных выгрузок: данные подтягиваются из 1С напрямую и всегда свежие.</p>
-        <p>Telegram-бот каждое утро присылает вам и генеральному сводку: какие оплаты пришли, что просрочено, какие заказы задерживаются. А по документам бот сам готовит письма контрагентам, например запрос акта сверки или напоминание об оплате. Вам остаётся проверить и отправить.</p>
+      <div class="tdesc"><div class="dl"><span class="plus">ВСЁ ИЗ БАЗЫ +</span>ЧЕМ ОТЛИЧАЕТСЯ</div>
+        <p class="key">Всё из Базы, только <mark>без ручных выгрузок</mark>: данные подтягиваются из 1С напрямую и всегда свежие.</p>
+        <p><b style="color:var(--tx)">Бот в Telegram</b> каждое утро присылает вам и генеральному сводку: какие оплаты пришли, что просрочено, какие заказы задерживаются. А по документам бот сам готовит письма контрагентам, например запрос акта сверки или напоминание об оплате. Вам остаётся проверить и отправить.</p>
       </div>
     </div>
     <div class="price">
@@ -537,8 +541,8 @@ svg text{font-family:var(--body)}
     <div>
       <div class="tnum">ТАРИФ 03</div>
       <div class="tname">Профи <span class="badge">РЕКОМЕНДУЮ</span></div>
-      <div class="tdesc">
-        <p>Всё из Практики, плюс вместе с кураторами вы доводите до рабочего состояния свою систему для компании: единую панель, где платежи, заказы и документы по каждому контрагенту собраны в одном месте. Вы и генеральный открываете её по ссылке со своим логином.</p>
+      <div class="tdesc"><div class="dl"><span class="plus">ВСЁ ИЗ ПРАКТИКИ +</span>ЧЕМ ОТЛИЧАЕТСЯ</div>
+        <p class="key">Вместе с кураторами вы доводите до рабочего состояния <mark>свою систему для компании</mark>: единую панель, где платежи, заказы и документы по каждому контрагенту в одном месте. Вы и генеральный открываете её <mark>по ссылке со своим логином</mark>.</p>
         <p>А можно пойти дальше и сделать личный кабинет для клиентов: они сами видят статус заказа и скачивают документы, и звонков «где мой заказ» становится меньше.</p>
       </div>
     </div>
